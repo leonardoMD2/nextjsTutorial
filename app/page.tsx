@@ -1,7 +1,7 @@
 export default async function Home() {
   // Realizar la llamada a la API directamente en el componente
   const res = await fetch(
-    `${process.env.NODE_ENV === "development" ? "http://localhost:3000/api" : "/api"}`,
+    `${process.env.NODE_ENV === "development" ? "http://localhost:3000/api" : `${process.env.BASE_URL}/api}`
     { method: "GET", cache: "no-store" } // Usar cache: "no-store" para evitar resultados obsoletos
   );
 
