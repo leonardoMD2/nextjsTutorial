@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 export async function GET(request: Request) {
-  return Response.json({ message: 'Hello world from the API router' })
+  return NextResponse.json({ message: 'Hello world from the API router xd' })
 }

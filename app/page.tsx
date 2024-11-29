@@ -1,7 +1,7 @@
 
 
 export default async function Home() {
-  const res = await fetch('http://localhost:3000/api');
+  const res = await fetch(`${process.env.BASE_URL}/api`);
   const res2 = await res.json()
 
   console.log(res2)
